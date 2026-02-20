@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: web-config
+  namespace: web-app
+data:
+  index.html: |
+    <html>
+    <head><title>Production App</title></head>
+    <body>
+      <h1>🚀 Welcome to Production NGINX App</h1>
+      <p>This is served using ConfigMap!</p>
+    </body>
+    </html>
